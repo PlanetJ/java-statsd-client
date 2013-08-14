@@ -5,17 +5,57 @@ package com.timgroup.statsd;
  * required.
  * 
  * @author Tom Denley
- *
+ * 
  */
 public final class NoOpStatsDClient implements StatsDClient {
-    @Override public void stop() { }
-    @Override public void count(String aspect, int delta) { }
-    @Override public void incrementCounter(String aspect) { }
-    @Override public void increment(String aspect) { }
-    @Override public void decrementCounter(String aspect) { }
-    @Override public void decrement(String aspect) { }
-    @Override public void recordGaugeValue(String aspect, int value) { }
-    @Override public void gauge(String aspect, int value) { }
-    @Override public void recordExecutionTime(String aspect, int timeInMs) { }
-    @Override public void time(String aspect, int value) { }
+
+	@Override
+	public void stop() {
+	}
+
+	@Override
+	public void count(String aspect, int delta) {
+	}
+
+	@Override
+	public void incrementCounter(String aspect) {
+	}
+
+	@Override
+	public void increment(String aspect) {
+	}
+
+	@Override
+	public void decrementCounter(String aspect) {
+	}
+
+	@Override
+	public void decrement(String aspect) {
+	}
+
+	@Override
+	public void recordGaugeValue(String aspect, int value) {
+	}
+
+	@Override
+	public void gauge(String aspect, int value) {
+	}
+
+	@Override
+	public void recordExecutionTime(String aspect, int timeInMs) {
+	}
+
+	@Override
+	public void time(String aspect, int value) {
+	}
+
+	@Override
+	public void increment(String aspect, int samplePercentage) {
+	}
+
+	@Override
+	public void count(String aspect, int delta, int samplePercentage) {
+		// TODO Auto-generated method stub
+
+	}
 }
